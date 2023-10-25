@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #3083F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 40px;
+    gap: 40px;
+}
+.heading{
+    margin-top: 40px;
+    background-color: rgb(235, 188, 215);
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    
+}
+.inputfield{
+    display: flex;
+    gap: 50px;
+}
+.listContainer ol li{
+    list-style:disc;
+}
+.inputfield .input::placeholder{
+    color: #3083F0;
+}
+.inputfield input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    padding-left: 15px;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: large;
+    color: #69a3ee;
+    border-bottom: 2px solid black;
+}
+.inputfield button{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    background-color: rgb(88, 219, 175);
+    color: aliceblue;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+.inputfield button:hover{
+    background-color: #69a3ee;
+}
+.inputfield button i{
+    font-size: 20px;
+}
+.subHeading{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: -280px;
+    color: rgb(153, 1, 153);
+}
+.todo_items{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 250px;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    /* margin-left: -180px; */
+}
+.liItem{
+    font-size: 25px;
+}
+.editDelete{
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+.editDelete i:hover{
+    transform: scale(1.5);
+    transition: all 0.3s ease-in;
+}
+.editDelete .fa-pen-to-square{
+    margin-bottom: -30px;
+    color: rgb(117, 115, 28);
+}
+.editDelete .fa-trash{
+    color: red;
+}
+.completed{
+    color: green;
+}
+.not-completed{
+    color: yellow;
+}
+
+
+@media (max-width : 768px){
+    .box{
+        width: 40%;
+    }
+    .subHeading{
+        margin-left: 0px;
+    }
+    .inputfield{
+        gap: 5px;
+    }
+    .inputfield input{
+        width: 60%;
+    }
+    .todo_items{
+        gap: 10px;
+    }
+}
